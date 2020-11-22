@@ -10,7 +10,9 @@ import java.util.List;
 @Repository
 public interface ClientRepository extends JpaRepository<Client, Long> {
 
-    @Query("SELECT c FROM Client c WHERE c.name LIKE %?1%")
+    @Query("SELECT c FROM Client c WHERE c.name LIKE %?1% OR c.CUI LIKE %?1%")
     public List<Client> search(String keyword);
+
+
 
 }

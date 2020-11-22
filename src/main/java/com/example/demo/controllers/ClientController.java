@@ -31,6 +31,8 @@ public class ClientController {
         return "index";
     }
 
+
+
     //arata pagina de client nou
     @RequestMapping("/new")
     public String showNewClientPage(Model model) {
