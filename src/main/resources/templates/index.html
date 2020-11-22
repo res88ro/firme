@@ -27,6 +27,7 @@
             <th>Name</th>
             <th>Oras</th>
             <th>Numar telefon</th>
+            <th>CUI</th>
 
         </tr>
         </thead>
@@ -35,6 +36,7 @@
             <td th:text="${client.name}">Name</td>
             <td th:text="${client.city}">Oras</td>
             <td th:text="${client.phone}">Numar telefon</td>
+            <td th:text="${client.CUI}">CUI</td>
             <td>
             <a th:href="@{/index/edit{id}(id=${client.id})}">Actualizeaza</a>
             <a th:href="@{/index/delete/{id}(id=${client.id})}">Sterge</a>

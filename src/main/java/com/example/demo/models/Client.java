@@ -26,4 +26,7 @@ public class Client {
     @Column(name = "phone_number")
     private String phone;
 
+    @Column(name = "cui_client")
+    private String CUI;
+
 }
